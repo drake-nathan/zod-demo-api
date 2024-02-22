@@ -1,13 +1,21 @@
 {
   "name": "zod-demo-api",
-  "module": "index.ts",
+  "module": "src/server.ts",
   "type": "module",
   "scripts": {
     "format": "prettier --write .",
-    "start": "bun run index.ts"
+    "start": "bun run src/server.ts"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "@types/bun": "^1.0.6",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-perfectionist": "^2.5.0",
     "prettier": "^3.2.5",
     "prettier-plugin-sort-json": "^3.1.0"
   },
