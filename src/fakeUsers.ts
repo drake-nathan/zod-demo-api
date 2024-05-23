@@ -1,3 +1,4 @@
+/* eslint-disable perfectionist/sort-objects */
 import { faker } from "@faker-js/faker";
 
 interface User {
@@ -11,11 +12,11 @@ interface User {
 }
 
 const createFakeUser = (id: number): User => ({
-  email: faker.internet.email(),
-  favoriteColor: faker.color.rgb(),
   id,
   name: faker.person.fullName().toLowerCase(),
+  email: faker.internet.email(),
   phone: faker.phone.number(),
+  favoriteColor: faker.color.rgb(),
   tailwind: Math.random() < 0.5 ? "love" : "hate",
   ...(Math.random() < 0.5 ?
     { zodiac: faker.person.zodiacSign() }
@@ -25,11 +26,11 @@ const createFakeUser = (id: number): User => ({
 export const generateUsers = (amount: number): User[] => {
   const users: User[] = [
     {
-      email: faker.internet.email(),
-      favoriteColor: faker.color.rgb(),
       id: 0,
       name: faker.person.fullName().toLowerCase(),
+      email: faker.internet.email(),
       phone: faker.phone.number(),
+      favoriteColor: faker.color.rgb(),
       tailwind: "love",
       zodiac: faker.person.zodiacSign(),
     },

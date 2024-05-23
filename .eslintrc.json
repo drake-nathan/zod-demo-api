@@ -31,6 +31,12 @@
       "error",
       { "ignorePrimitives": { "string": true } }
     ],
+    "@typescript-eslint/restrict-template-expressions": [
+      "error",
+      {
+        "allowNumber": true
+      }
+    ],
     "import/no-anonymous-default-export": "off",
     "import/prefer-default-export": "off",
     "no-console": ["warn", { "allow": ["info", "warn", "error"] }]
